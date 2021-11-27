@@ -33,10 +33,13 @@ guessButton.addEventListener('click', () => {
   updateScore(winner);
 
   // Display the winner
+  /*
+  // Remove aler coz human cannot input 10 by clicking add button
   if (humanIsWinner == undefined){
     // Task 8: added alert if human selected number 10
     alert('You have selected 10! You lose! Pls select 0-9');
   }
+  */
   if (humanIsWinner) {
     guessButton.innerText = 'You Win!!!!!';
     guessButton.classList.toggle('winning-text')
